@@ -19,10 +19,7 @@ jobs:
 
       - name: Convert PDF to HTML
         run: |
-          gs -dNOPAUSE -dBATCH -sDEVICE=html \
-          -dFirstPage=1 -dLastPage=1 \
-          -sOutputFile=index.html \
-            Convert PDF to HTML.pdf
+          python my-script.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
