@@ -19,7 +19,7 @@ jobs:
 
       - name: Convert PDF to HTML
         run: |
-          gs -dNOPAUSE -dBATCH -sDEVICE=htmlwrite \
+          gs -dNOPAUSE -dBATCH -sDEVICE=html \
           -dFirstPage=1 -dLastPage=1 \
           -sOutputFile=index.html \
             Convert PDF to HTML.pdf
